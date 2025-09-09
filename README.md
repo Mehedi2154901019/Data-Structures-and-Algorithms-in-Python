@@ -65,6 +65,17 @@ But python can have multiple types of objects which we call 'List' and we do not
 ```
 ['Hello', 3.45,1,'c',{"Sunday_Sales": 45000}, 2544] #different types of data in single list
 ```
+# LinkedList
+Arrays have few issues, if we want to insert or delete any value it have to shift all the memory addresses to make or gaph the space for the new value or deletion.  
+Also when the memory allocation for the specific array or list is filled, for the new value it has to create more memory addresses along with the original memory size to duplicate the whole array or list to the new place.  
+Here comes LinkedList which uses value + address of next value. So while inserting, the next address of previous value is linked to the new value,  
+and the next of new value is just pointed towards the value that the previous value was addressing as the next value.
+```
+1 | 0*523412 -> 2 | 0*523473 -> 3 | null #before inserting
+1 | 0*523490 -> 145 | 0*523412 -> 2 | 0*523473 -> 3 | null #after inserting
+```
+Here, for inserting 145, the next of 1 is pointed to address of 145 and the next of 145 is now addressed to address of 2.   
+Thus, no memory wastage, very simple and efficient method.
 
 
 
