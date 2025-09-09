@@ -16,7 +16,7 @@ So, the time complexity will always be constant. Hence, Time complexity is  **O(
 for loop
 ```
 This loop depends on the iteration. If there are 5 iterations, complexity will be O(5) and if 10 then O(10)  
-So, for n iterations the time complexity of the for loop will be **O(n)**  
+So, for n iterations the time complexity of the for loop will be ** O(n) **  
 
 ```
 for
