@@ -55,6 +55,19 @@ n=2^k
 logn=k  
 So, the space complexity for the binary search problem is O(logn)  
 
+# Array
+In Java or C++ you need to specify the fixed array type as the array contains only simiral type of elements like:
+```
+[1,3,4,5,6,3] #only numbers
+['cat','bat','rat'] #only strings
+```
+But python can have multiple types of objects which we call 'List' and we do not need any static declaration of array types in python.
+```
+['Hello', 3.45,1,'c',{"Sunday_Sales": 45000}, 2544] #different types of data in single list
+```
+
+
+
 
 
 
