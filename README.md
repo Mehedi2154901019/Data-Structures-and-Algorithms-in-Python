@@ -137,7 +137,8 @@ While list is mostly used, the more efficient way to implement stack in python i
 Queue follows FIFO (First In First Out) like a real life queue at ticket counter where the first person will get the ticket first. Similarly the first data will be accessed first.  
 In python, Queue can also be implemented by list. Like Stack, Queue can also be efficiently used by appendleft of deque of collections in python but list is handy.
 
-
+# Tree
+We know tree has parent node, children nodes, levels, neighbors etc. For implementing tree in python, there is no special way just as in Java or C++ where tree is manually implemented with traditional and few OOP concepts.
 
 
 
