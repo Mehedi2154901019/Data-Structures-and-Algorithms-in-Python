@@ -77,6 +77,35 @@ and the next of new value is just pointed towards the value that the previous va
 Here, for inserting 145, the next of 1 is pointed to address of 145 and the next of 145 is now addressed to address of 2.   
 Thus, no memory wastage, very simple and efficient method.
 
+# Hash Table or Hash Map
+Basically you can think it like a key value pair where you can call the key and it will automatically provide you the value to the corresponding key.  
+In Java it is known as HashMap, in C++ std::map and different languages have different syntax.  
+In Python, 'Dictionary' is the representation of Hash Map.  
+```
+dict={
+"day 1" : 10,
+"day 2" : 11,
+"day 3" : 12
+}
+
+print(dict["day 1"])
+```
+The keys are day 1, day 2 and day 3 and 10,11,12 are their values.
+
+### Internal workflow of dictionary in python or hash map
+In array or list we have numerical index from 0 to n.     
+The main difference is in dictionary, the indices are strings. They are like array or list but the index here is not numerical.   
+Suppose, your dictionary size is 5. You want to set the memory address for the key "day 1".  
+Now, all the (ASCII value of d+a+y+ +1) MOD 5 = The address where the value for that 'day 1' key will be stored.  
+So, to retrieve the value you just call the 'day 1', it will calculate the value in the above method and return you the value for that key.  
+```
+(Sum of ASCII value of all characters in key) MOD (dictionary size) -> store the value for that key
+```
+There maybe several other hash functions. This was just one of the examples of how hash maps store the values internally in memory.  
+The complexity is O(1) here as the calcualtion is constant.  
+
+### Collision problem of Hash map
+
 
 
 
