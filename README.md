@@ -133,7 +133,9 @@ x.pop() # returns 30 as it is the last value and first to come out (LIFO)
 ```
 While list is mostly used, the more efficient way to implement stack in python is 'deque' which can be imported as 'from collection import deque'. However for convenience only list is discussed here.  
 
-
+# Queue
+Queue follows FIFO (First In First Out) like a real life queue at ticket counter where the first person will get the ticket first. Similarly the first data will be accessed first.  
+In python, Queue can also be implemented by list. Like Stack, Queue can also be efficiently used by appendleft of deque of collections in python but list is handy.
 
 
 
