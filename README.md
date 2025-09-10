@@ -117,6 +117,23 @@ Linear Probing: If there is collision problem, in this approach the key-value pa
 If the following address is full, it will find to store in the next address.   
 Thus if the last allocated address for that dictionary is also full, it will then start finding the very top address, and so on. finally it will get a place and store the value there. You might think it like a loop where you start from anywhere in the middle, go to the following, if all are filled up, go back to very top, then go to the following, you will get a place somewhere.
 
+# Stack
+It is a very simple data structure used by LIFO (Last In First Out) method which stacks a number of data or value like a pile one on another.  
+Imagine when you perform any task on computer, if you want to undo any task or update, you type ctrl+z. This is one kind of stack which pops up the latest value.  
+Another example might be while browsing a website, you click on the back arrow to go the previous pages. This is also implementation of stack.  
+
+Now, in python stack can be implemented as "list"
+```
+x=[]
+x.append(10) #first data
+x.append(20)
+x.append(30) #top data
+
+x.pop() # returns 30 as it is the last value and first to come out (LIFO)
+```
+While list is mostly used, the more efficient way to implement stack in python is 'deque' which can be imported as 'from collection import deque'. However for convenience only list is discussed here.  
+
+
 
 
 
