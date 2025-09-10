@@ -140,7 +140,7 @@ In python, Queue can also be implemented by list. Like Stack, Queue can also be 
 # Tree
 We know tree has parent node, children nodes, levels, neighbors etc. For implementing tree in python, there is no special way just as in Java or C++ where tree is manually implemented with traditional and few OOP concepts.
 
-
+With the above concepts of Data Structures, the algorithms like sorting, searching etc can be implemented in python which is better approach specially in context of syntax for python rather than Java or C++.   Nevetheless, the comfort depends upon the programmers' hands on specific languages but in this repository the ways of implementation of DSA for Python is discussed.
 
 
 
