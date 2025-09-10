@@ -105,6 +105,17 @@ There maybe several other hash functions. This was just one of the examples of h
 The complexity is O(1) here as the calcualtion is constant.  
 
 ### Collision problem of Hash map
+Sometimes the MOD might provide same memory address for different keys.  
+Assume the key1 MOD size = 7 and key2 MOD size = 7 too. How will it store the value of the second key in the same address?  
+There are two popular options: Chaining and Linear probing.  
+
+Chaining: The value of key2 will be stored in the same memory address through a linkedlist.  
+Suppose, in the address 7, key1 | value -> key2 | value   
+Thus if there is value at the same address for different keys, the solution is to store them as a linkedlist in that memory.  
+
+Linear Probing: If there is collision problem, in this approach the key-value pair will find the following address to store the value.   
+If the following address is full, it will find to store in the next address.   
+Thus if the last allocated address for that dictionary is also full, it will then start finding the very top address, and so on. finally it will get a place and store the value there. You might think it like a loop where you start from anywhere in the middle, go to the following, if all are filled up, go back to very top, then go to the following, you will get a place somewhere.
 
 
 
